@@ -1,0 +1,78 @@
+// Body
+$body-font: 'Open Sans', sans-serif;
+$body-font-color: #435577;
+$font-size-base:	16px !default;
+
+$heading-font: 'Open Sans', sans-serif;
+$heading-font-color: #263239;
+$heading-font-weight: 700;
+
+// Docs
+$docs-font-color: #333;
+
+$standard-margin: 3em;
+$shadow-color: rgba(0,0,0,0.10);
+
+// Colors
+$link-blue: #1679f0; // logo upper left blue
+$main-light-blue: $link-blue;
+$code-dark-blue: rgb(5, 30, 76);
+$highlight-blue: $link-blue;
+$main-dark-blue:#0e2b92;
+$code-light-gray:rgba(0,0,0,.05);
+$header-dark-blue: #031b4e;
+$text-black: rgba(0,0,0,.84);
+$intense-green: #2cbe4e;
+$terminal-black: #263238;
+
+
+$ghost-blue: #f8f8ff;
+$light-blue: #D7E5FE;
+$midnight-blue: #193170;
+$sh-blue: #596b9f;
+$sh-orange: #FF7814;
+$white: white;
+$soft-white: rgba(255,255,255,0.89);
+$light-gray: rgba(255,255,255,0.25);
+// $darkblue: #2562B8;
+$deepblue: #1D263D;
+$darkblue: #1D263D;
+$midblue: #435577;
+$lighterblue: lighten($darkblue, 10%);
+$clearblue: #199FFF;
+$codeblue: rgb(19, 25, 39);
+
+$codeblock-background: rgba(0,0,0, 0.05);
+$pane-background: rgba(0,0,0, 0.15);
+
+$green: #39CA74;
+$yellow: #FDC02F;
+$red: #F1453D;
+
+$boring-gray: #d8d8d8;
+
+$brand-secondary: #00A8FB;
+
+
+// Navbar
+$navbar-height:		50px;
+$navbar-inverse-bg: $main-dark-blue !default;
+$navbar-inverse-link-hover-bg: white !default;
+$nav-link-hover-bg: transparent;
+
+// Inverted navbar toggle
+$navbar-inverse-toggle-hover-bg:            white !default;
+$navbar-inverse-toggle-icon-bar-bg:        $highlight-blue !default;
+$navbar-inverse-toggle-border-color:        transparent !default;
+
+
+// Links
+$link-color: #000;
+$nav-link-color: white;
+$nav-link-color-hover: $sh-orange;
+$link-color-hover: $link-blue;
+$link-color-active: $link-blue;
+
+$sidebar-border-color: $light-gray;
+
+$base-border-radius: 6px;

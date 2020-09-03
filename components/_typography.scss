@@ -1,0 +1,254 @@
+// add a dot to .dot classed elements
+h1, h2, h3, h4, h5, h6 {
+	&.dot:after {
+		content: '.';
+		color: $sh-orange;
+	}
+	b {
+		color: $blue-logo-left-up;
+	}
+}
+
+p {
+	--x-height-multiplier: 0.375;
+	--baseline-multiplier: 0.17;
+	letter-spacing: .01rem;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 1.58;
+}
+
+.brand {
+	margin-top: -1px;
+	margin-left: -10px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	&.nodot:after { 
+		content: '';
+	}
+}
+
+a {
+	color: $link-blue;
+
+	&:hover, &:active{
+		color: $link-blue;
+		text-decoration: underline;
+	}
+}
+
+/** Text above headings: uppercased, grey, extra kerning */
+.sup-hx {
+	font-weight: 700;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+    color: $gray-500;
+    margin: 0;
+}
+
+p.sup-h1, span.sup-h1 {
+    @extend .sup-hx;
+    font-size: 18px !important;
+}
+
+p.sup-h2, span.sup-h2 {
+    @extend .sup-hx;
+    font-size: 16px !important;
+}
+
+p.sup-h3, span.sup-h3 {
+    @extend .sup-hx;
+    font-size: 14px !important;
+}
+
+p.sup-h4, span.sup-h4 {
+    @extend .sup-hx;
+    font-size: 12px !important;
+}
+
+.md-content {
+	// font-family: 'Merriweather', serif;
+	--x-height-multiplier: 0.375;
+	--baseline-multiplier: 0.17;
+	letter-spacing: .01rem;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 1.58;
+
+	max-width: 740px;
+
+	ul li {
+		list-style-type: square;
+	}
+
+	blockquote{
+		background: #f9f9f9;
+		// This aligns the text with other text but adds a border 20px to the left.
+		border-left: 4px solid #ccc;
+		padding-left: 20px;
+	 	p, ol, ul {
+			margin: 0.3em 0;
+			font-size: 110%;
+		}
+	}
+
+	p {
+		margin: 0 0 1em;
+	}
+	.md-content ul {
+		font-size: 18px;
+	}
+	pre {
+		margin: 1.5em auto;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		margin: 1em auto 0.5em;
+	}
+	h3 {
+		margin-top: 1em;
+	}
+
+	dd {
+		margin: 3px 0 1em 25px;
+	}
+
+	p, h1, h2, h3, h4, h5, h6, ul, ol, dd, dt {
+		code  {
+			vertical-align: middle;
+			background: rgba(27,31,35,.05);
+			color: #24292e;
+			padding: 3px 4px;
+			margin: 0 2px;
+			border-radius: 0px;
+			font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+		}
+	}
+
+	.highlight {
+		background:rgb(45, 55, 72);
+		color: rgb(255, 255, 255);
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border: none;
+		border-radius: 10px;
+		code {
+			background: transparent;
+			color: inherit;
+			font-size: 100%;
+		}
+		span.copyBtn {
+			color: rgb(45, 55, 72) !important;
+			background-color: rgba($color: #fff, $alpha: 0.25);
+			&:hover {
+				color: #fff !important;
+			}
+		}
+	}
+
+	.subtitle {
+		color: $gray-500;
+		font-weight: 600;
+	}
+
+	pre.highlight{
+		padding: 20px;
+		background:rgb(45, 55, 72);
+	}
+
+	.copy-btn {
+		color: #fff;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	.image-caption {
+		text-align: center;
+		font-size: .8em;
+		color: #999;
+	}
+
+	&--alt {
+		blockquote{
+			background-color: transparent;
+			position: relative;
+			// This aligns the text with other text but adds a border 20px to the left.
+			border-top: 1px solid $main-light-blue;
+			border-bottom: 1px solid $main-light-blue;
+			border-left: 0;
+			padding: 55px 30px 30px 30px;
+			margin: 40px 0;
+			&:before {
+				content: '';
+				background-image: url(/img/case-study/quotes.svg);
+				width: 35px;
+				height: 100%;
+				background-size: contain;
+				background-repeat: no-repeat;
+				display: block;
+				position: absolute;
+				top: 1.25em;
+				left: 1.5em;
+				opacity: 0.5;
+				z-index: 1;
+			}
+			
+			 p, ol, ul {
+				margin: 0.3em 0;
+				color: $heading-font-color;
+				font-style: italic;
+				font-size: 110%;
+			}
+		}
+	}
+
+}
+
+.blog-header-img {
+	padding: 10px 40%;
+}
+
+
+.header_home-inner {
+	h3 {
+		font-size: 23px;
+	    line-height: 1.4;
+	    color: $body-font-color;
+	}
+}
+
+.page-header {
+	h3 {
+		font-size: 23px;
+	    line-height: 1.4;
+		color: $body-font-color;
+	}	
+}
+
+.page {
+	.contact-section {
+		padding: 1em;
+		margin: 1em 0 3em 0;
+		background: rgba(255,255,255,0.05);
+		border-radius: 6px; 
+	}
+	.contact-item {
+		padding: 1em 1em 1em 1em;
+		border-right: 1px solid $light-gray;
+		&:last-child {
+			border-right: 0px;
+		}
+	}
+	.contact-title {
+		font-size: 20px;
+	}
+}
+
+.title {
+	font-weight: 800;
+	letter-spacing: -1px;
+}

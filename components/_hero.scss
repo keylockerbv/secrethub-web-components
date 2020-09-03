@@ -1,0 +1,114 @@
+.hero {
+    background-color: $background-gray;
+    padding: 3em 0;
+    @media(min-width:$screen-sm-max) {
+        padding: 6em 0;
+        &--post {
+            padding-bottom: 4em;
+        }
+    }
+    .center-small-screen{
+        @media(max-width:$screen-sm-max) {
+            text-align: center;
+        }
+    }
+}
+
+.hero__meta {
+    position: relative;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $main-light-blue;
+    display: inline-block;
+    &:before {
+        content: "";
+        position: absolute;
+        top: -0.25em;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        background-image: url(../img/secrethub-logo-shield.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    @media(max-width:$screen-sm-max) {
+        transform: translateX(-50%);
+        left: 50%;
+    }
+    &--logo {
+        &:before {
+            content: none;
+        }
+        display: inline-block;
+        img {
+            max-height: 22px;
+            margin-right: 10px;
+            transform: translateY(-2px);
+        }
+    }
+}
+
+.hero__title {
+    @media(max-width:$screen-sm-max) {
+        font-size: 30px;
+        text-align: center;
+    }
+    font-size: 44px;
+    margin-bottom: 25px;
+    letter-spacing: -1px;
+    font-weight: 800;
+}
+
+.hero__description {
+    font-size: 18px;
+    font-family: $body-font;
+    font-weight: 400;
+    @media(max-width:$screen-sm-max) {
+        text-align: center;
+    }
+}
+
+.hero__image {
+    margin-top: 2em;
+    display: block;
+    border-radius: 15px;
+    overflow: hidden;
+    img {
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media(min-width:992px) {
+        position: absolute;
+        top: -70px;
+        right: 0;
+        margin-top: 0;
+        .hero--post & {
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            overflow: hidden;
+            top: -160px;
+            &--vertical {
+                position: relative;
+                top: 0;
+            }
+        }
+    }
+}
+
+.hero__feature {
+    background-color: #fff;
+    border-radius: 15px;
+    max-width: 370px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 1.5em;
+    box-shadow: 0 10px 30px 0px rgba(#000, 0.1);
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+}

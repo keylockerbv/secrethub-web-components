@@ -1,0 +1,17 @@
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 15px;
+}
+
+.logo {
+    max-width: 220px;
+    vertical-align: middle;
+    margin-top: 20px;
+    @media(max-width:$screen-sm-max) {
+        padding: 1em;
+    }
+}

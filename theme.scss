@@ -1,1 +1,11 @@
-$primary-color: #1679f0;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+@import "components/variables";
+@import "components/typography";
+@import "components/bootstrap_overrides";
+@import "components/button";
+@import "components/form";
+@import "components/hero";
+@import "components/logos";
+@import "components/section";
+
