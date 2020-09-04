@@ -15,7 +15,7 @@ a.button {
     cursor: pointer;
     transition: all .25s cubic-bezier(.645,.045,.355,1);
     .icon {
-        background-image: url('/img/enterprise/icons/arrow-right.svg');
+        background-image: url('https://secrethub.io/img/enterprise/icons/arrow-right.svg');
         width: 7px;
         height: 11px;
         background-size: contain;
@@ -29,7 +29,7 @@ a.button {
         color: $link-blue;
         text-decoration: none;
         .icon {
-            background-image: url('/img/enterprise/icons/arrow-right-blue.svg');
+            background-image: url('https://secrethub.io/img/enterprise/icons/arrow-right-blue.svg');
             transform: translate(3px, -1px);
         }
     }
