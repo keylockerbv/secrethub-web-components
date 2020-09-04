@@ -1,0 +1,105 @@
+// NOTE: this file was copied entirely from the dashboard project.
+// Let's refactor this later.
+
+/* SecretHub color palette */
+$red:           #F1453D;
+$yellow:        #FDC02F;
+$blue-primary:  #0053CB;
+$blue-accent:   #0F2C92;
+$orange:        #FD7E14;
+$green-primary: #39CA71;
+$green-accent:  #2CBE4E;
+$white:         #FFFFFF;
+$black:         #000000;
+
+/* Gray colors according to Material Design gray theme */
+$gray-100:      #F5F5F5;
+$gray-200:      #EEEEEE;
+$gray-300:      #E0E0E0;
+$gray-400:      #BDBDBD;
+$gray-500:      #9E9E9E;
+$gray-600:      #757575;
+$gray-700:      #616161;
+$gray-800:      #424242;
+$gray-900:      #212121;
+
+$colors: (
+  "blue":       $blue-primary,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green-accent,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+);
+
+/* LOGO COLORS */
+$blue-logo-left-up: #1679f0;
+$blue-logo-right-up: #1470dd;
+$blue-logo-right: #1060bf;
+
+/* THEME COLORS */
+$primary:       $blue-logo-left-up;
+$primary-dark:  $blue-logo-right;
+$secondary:     $white;
+$success:       $green-primary;
+$warning:       $orange;
+$danger:        $red;
+
+$theme-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  light: $secondary,
+  dark: $primary-dark,
+  success: $success,
+  warning: $warning,
+  danger: $danger,
+);
+
+/* Font */
+$font-size-base:            16px; // Assumes the browser default, typically `16px`
+$font-size-xs:              ($font-size-base * .75);  // 12px
+$font-size-sm:              ($font-size-base * .875); // 14px
+$font-size-xl:              ($font-size-base * 1.25); // 20px
+$font-size-xxl:             ($font-size-base * 2.20); // 36px
+
+$font-weight-light:         300;
+$font-weight-normal:        400;
+$font-weight-thick:         500;
+$font-weight-bold:          600;
+
+$font-primary-color:        rgba($black, 0.70);
+$font-secondary-color:      rgba($black, 0.54);
+$font-disabled-color:       rgba($black, 0.38);
+
+/* Heading */
+$h1-font-size:            ($font-size-base * 2.40); // 38px
+$h2-font-size:            ($font-size-base * 1.70); // 27px
+$h3-font-size:            ($font-size-base * 1.50); // 24px
+$h4-font-size:            ($font-size-base * 1.25); // 20px
+$h5-font-size:            $font-size-base;
+
+$headings-color:          $font-primary-color;
+$headings-font-weight:    $font-weight-normal;
+
+/* -- SECRETHUB VARIABLES -- */
+
+/* Boxes */
+$box-border-color:      $gray-300;
+$box-border-radius:     3px;
+
+/* Input fields */
+$input-border-color:    darken($box-border-color, 20%);
+
+/* Margin between page title and nav */
+$nav-item-height:       35px;
+$nav-item-margin:       20px;
+$title-nav-margin:      50px;
+
+/* Code block */
+$code-block-background: #f5f2f0;
+$code-block-border:     $gray-400;
+
+/* Footer */
+$background-gray: #F9FBFD;
