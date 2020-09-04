@@ -30,7 +30,7 @@ main {
     color: $body-font-color;
     font-size: 18px;
     padding-top: 0 !important;
-    @media(min-width:$screen-sm-max) {
+    @media(min-width:991px) {
         padding-bottom: 13px !important; 
     }
 }
@@ -38,20 +38,20 @@ main {
 .open, .close {
     top: 10px !important;
     right: 0 !important;
-    @media(min-width:$screen-sm-max) {
+    @media(min-width:991px) {
         top: 14px !important;
     }
 }
 
 .navbar .navbar-collapse {
-    @media(max-width:$screen-sm-max) {
+    @media(max-width:991px) {
         max-height: 640px !important;
         height: 640px !important;
     }
 }
 
 .dropdown:hover {
-    @media(min-width:$screen-sm-max) {
+    @media(min-width:991px) {
         .dropdown-menu {
             display: block;
         }
@@ -59,7 +59,7 @@ main {
 }
 
 .dropdown {
-    @media(max-width:$screen-sm-max) {
+    @media(max-width:991px) {
         .dropdown-menu {
             position: static;
             float: none;
@@ -82,10 +82,10 @@ main {
 }
 
 .dropdown-menu {
-    @media(max-width:$screen-sm-max) {
+    @media(max-width:991px) {
         margin-bottom: 15px;
     }
-    @media(min-width:$screen-sm-max) {
+    @media(min-width:991px) {
         margin: 0 !important;
         padding: 10px 0 !important;
         border-color: #e7e7e7;
