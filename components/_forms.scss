@@ -4,11 +4,15 @@
     padding: 2em;
     border-radius: 15px;
     box-shadow: 0 10px 30px 0px rgba(#000, 0.1);
+    width: 100%;
     &__heading {
         color: #fff;
         font-size: 22px;
         margin-top: 0;
         font-family: $heading-font;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 1em;
     }
     &__copy {
         color: #fff;
