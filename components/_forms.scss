@@ -62,7 +62,7 @@
 
 .form-field-duo {
     overflow: hidden;
-    @media(min-width:$screen-sm-max) {
+    @media(min-width:991px) {
         .form-field {
             width: calc(50% - 10px);
             float: left;
