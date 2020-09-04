@@ -1,17 +1,44 @@
 .form {
     position: relative;
-    // background: $deepblue;
-    // padding: 2em;
-    // border-radius: 15px;
-    // box-shadow: 0 10px 30px 0px rgba(#000, 0.1);
+    background: $deepblue;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px 0px rgba(#000, 0.1);
     &__heading {
         color: #fff;
         font-size: 22px;
         margin-top: 0;
+        font-family: $heading-font;
     }
     &__copy {
         color: #fff;
         font-size: $font-size-base;
+        font-family: $body-font;
+    }
+    pre {
+        padding: 5px;
+        color: #fff;
+        background-color: #2d3748;
+        border-radius: 5px;
+        border: 1px solid lighten(#1f263b, 15%);
+        code {
+            padding: 0;
+            border-radius: 0;
+            border: 0;
+        }
+    }
+    code {
+        font-size: 13px;
+        padding: 5px;
+        color: #fff;
+        background-color: #2d3748;
+        border-radius: 5px;
+        border: 1px solid lighten(#1f263b, 15%);
+    }
+    a {
+        font-family: $body-font;
+        color: #fff;
+        text-decoration: underline;
     }
     .error {
         background-color: lighten($red, 30%);
@@ -39,6 +66,39 @@
         }
     }
 }
+
+.form__link-block {
+    font-size: 16px !important;
+    border: 1px solid #fff;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none !important;
+    transition: all, ease-in-out, 0.3s;
+    &:hover {
+      background-color: #fff;
+      color: #263239 !important;
+    }
+    &--inline {
+      display: inline-block;
+      width: 45%;
+      text-align: center;
+      margin-right: 5%;
+      + .form__link-block--inline {
+        margin-right: 0;
+      }
+    }
+  }
+  
+  .invalid-feedback {
+    font-size: 12px !important;
+    background-color: lighten(#dc3545, 40%);
+    padding: 5px;
+    border-radius: 5px;
+    a {
+      color: #dc3545 !important;
+    }
+  }
 
 .form-header--submitted {
     display: none;
@@ -74,7 +134,7 @@
     }
 }
 
-.form-label {
+.form-label, .form-check-label {
     color: #fff;
     font-size: $font-size-base;
     display: block;
@@ -109,9 +169,10 @@
 // Fresh sales form overrides
 
 .fserv-container {
-    padding: 2em !important;
-    border-radius: 15px !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
     max-width: 100% !important;
+    margin: 0 !important;
 }
 
 .fserv-container div:last-of-type {
