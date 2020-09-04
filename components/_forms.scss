@@ -44,6 +44,16 @@
         color: #fff;
         text-decoration: underline;
     }
+    ol {
+        font-size: 16px;
+        color: #fff;
+        a {
+            font-size: inherit !important;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    }
     .error {
         background-color: lighten($red, 30%);
         border: 1px solid $red;
@@ -94,6 +104,17 @@
     }
   }
   
+.check-correct {
+  background-image: url("https://secrethub.io/img/icons/tick.svg");
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin-left: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(6px);
+}
+
   .invalid-feedback {
     font-size: 12px !important;
     background-color: lighten(#dc3545, 40%);
