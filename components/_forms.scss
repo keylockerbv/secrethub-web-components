@@ -180,7 +180,9 @@
     border-radius: 6px;
     width: 100%;
     padding: 0.75em;
+    height: auto;
     color: $body-font-color;
+    font-family: $body-font;
     option {
         color: $body-font-color;
     }
